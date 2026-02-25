@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}News | CorporateSite{% endblock %}
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <h1 class="mb-4">News & Insights</h1>
+        <div class="row g-4">
+            {% for post in posts %}
+                <div class="col-md-6">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <p class="text-muted small">{{ post.published_at }}</p>
+                            <h3 class="h5">{{ post.title }}</h3>
+                            <p>{{ post.summary }}</p>
+                            <a href="{{ post.get_absolute_url }}" class="btn btn-outline-primary btn-sm">Read article</a>
+                        </div>
+                    </article>
+                </div>
+            {% empty %}
+                <p>No blog posts published yet.</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

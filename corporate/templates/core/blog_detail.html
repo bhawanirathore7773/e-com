@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}{{ post.title }} | CorporateSite{% endblock %}
+{% block content %}
+<section class="py-5">
+    <div class="container" style="max-width: 860px;">
+        <p class="text-muted">{{ post.published_at }}</p>
+        <h1 class="mb-3">{{ post.title }}</h1>
+        <p class="lead">{{ post.summary }}</p>
+        <div>{{ post.content|linebreaks }}</div>
+    </div>
+</section>
+{% endblock %}
