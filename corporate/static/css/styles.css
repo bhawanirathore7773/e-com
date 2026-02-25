@@ -1,0 +1,42 @@
+:root {
+    --brand-primary: #0b3d91;
+    --brand-accent: #00a8cc;
+}
+
+body {
+    font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+    color: #1f2937;
+}
+
+.hero-section {
+    background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+}
+
+.product-card {
+    border: 0;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
+}
+
+.footer-link {
+    color: #d1d5db;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: .45rem;
+    padding: .55rem .75rem;
+}

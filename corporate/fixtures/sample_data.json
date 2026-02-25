@@ -1,0 +1,51 @@
+[
+  {
+    "model": "corporate.product",
+    "pk": 1,
+    "fields": {
+      "name": "Enterprise Analytics Suite",
+      "slug": "enterprise-analytics-suite",
+      "image": "products/sample-product-1.jpg",
+      "short_description": "Real-time dashboards and forecasting for leadership teams.",
+      "description": "A complete analytics platform with KPI tracking, AI-driven forecasting, and executive reporting.",
+      "featured": true,
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "corporate.product",
+    "pk": 2,
+    "fields": {
+      "name": "Workflow Automation Hub",
+      "slug": "workflow-automation-hub",
+      "image": "products/sample-product-2.jpg",
+      "short_description": "Automate repetitive business processes safely.",
+      "description": "Design, deploy, and monitor automated workflows across finance, HR, and operations.",
+      "featured": true,
+      "created_at": "2025-01-02T00:00:00Z"
+    }
+  },
+  {
+    "model": "corporate.galleryimage",
+    "pk": 1,
+    "fields": {
+      "title": "Client Strategy Workshop",
+      "image": "gallery/gallery-1.jpg",
+      "description": "Facilitated planning session with stakeholders.",
+      "created_at": "2025-01-03T00:00:00Z"
+    }
+  },
+  {
+    "model": "corporate.blogpost",
+    "pk": 1,
+    "fields": {
+      "title": "How Digital Modernization Improves Operational Speed",
+      "slug": "digital-modernization-operational-speed",
+      "summary": "Modern platforms are reducing enterprise cycle time across departments.",
+      "content": "Digital modernization is no longer optional for organizations aiming to stay competitive. In this article, we outline practical transformation milestones.",
+      "image": "",
+      "published_at": "2025-01-10",
+      "is_published": true
+    }
+  }
+]

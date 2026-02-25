@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Gallery | CorporateSite{% endblock %}
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <h1 class="mb-4">Gallery</h1>
+        <div class="row g-4">
+            {% for image in images %}
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 product-card">
+                        <img src="{{ image.image.url }}" class="card-img-top" alt="{{ image.title }}">
+                        <div class="card-body">
+                            <h5>{{ image.title }}</h5>
+                            <p class="mb-0">{{ image.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% empty %}
+                <p>No gallery images available.</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
